@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+.header ul { /* removed div tag, as div being replaced with header removes the need, though it can be replaced with header. In this situation it seems redundant. also consolidated this from */
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+	list-style-type: none;
+}
+
+
+.header ul li { /* as above, div tag replaced, also added display:inline;, to cause the top 3 links to display inline */
+    margin-left: 25px;
+	display:inline;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content { 
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+.benefits div { /* removed individual classes on each div to reduce redundancy, used benefits class with div tag instead*/
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefits h3 { /* as above, removed class name and used h3 tag with benefits class to reduce redundancy */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefits img { /* as above, removed class name and used benefits class, with the img tag to reduce redundancy */
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.content div { /* consolidated the 3 divs into one definition, removed individual classes to remove redundancy */
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+
+.content img { /* removed individual classes for the 3 images in this section, used content class instead */
+    max-height: 200px;
+}
+
+
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+footer { /* removed footer class, replaced with footer tag, un-needed class */
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
